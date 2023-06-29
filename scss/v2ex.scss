@@ -1,47 +1,53 @@
 @import "plugin";
 @import "reset";
 
-
-$width-max: 850px;
+$width-max: 1366px;
+$width-right: 270px;
 
 #Wrapper{
-  position: relative;
   .content{
+    //transform: translateX(135px); // 使主体内容居中
     max-width: $width-max;
     #Leftbar{
 
     }
     #Rightbar{
-      position: absolute;
-      right: 20px;
-      top: 0;
-      margin: 0;
+
     }
     #Main{
-      position: relative;
-      margin: 0;
       > .box{
         //margin-left: 300px;
+        .cell{ // 列表和回复
+          padding: 10px 25px;
+          table{
+            tbody{
+              td:first-child{
+                padding-right: 10px;
+                // 列表头像
+                a{
+                  display: block;
+                  //border: 1px solid $color-border;
+                  //@include border-radius($radius-avatar);
+                }
+              }
+              td:nth-child(2){
+              }
+            }
+          }
+        }
       }
     }
   }
 }
 
 
-.item{
-  padding: 10px 25px;
-  table{
-    tbody{
-      td:nth-child(2){
-        width: 20px;
-      }
-    }
-  }
-}
+
 
 
 
 @import "cell";
 @import "box";
 @import "tab";
+@import "bottom";
+@import "markdown";
 @import "top";

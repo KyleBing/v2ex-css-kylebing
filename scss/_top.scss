@@ -1,6 +1,5 @@
 // HEADER
-$height-header: 44px;
-$padding-header: 7px;
+
 
 #Top{
   .content{
@@ -24,9 +23,9 @@ $padding-header: 7px;
       }
       // search bar
       #search-container{
+        height: 30px;
         @include border-radius(50px);
         padding-left: 35px;
-        height: $height-header - $padding-header * 2;
         box-sizing: border-box;
         margin: 0;
         border: 1px solid $color-border;
