@@ -53,9 +53,6 @@
 #Wrapper .content #Main > .box .cell table tbody td:first-child {
   padding-right: 10px;
 }
-#Wrapper .content #Main > .box .cell table tbody td:first-child a {
-  display: block;
-}
 .cell:first-child {
   -webkit-border-radius: 3px 3px 0 0;
   -moz-border-radius: 3px 3px 0 0;
