@@ -18,8 +18,147 @@
     display: none;
   }
 }
+::-webkit-scrollbar {
+  z-index: 50;
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #888;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-corner {
+  display: none;
+}
+
+#Wrapper {
+  position: relative;
+}
+#Wrapper .content {
+  max-width: 850px;
+}
+#Wrapper .content #Rightbar {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  margin: 0;
+}
+#Wrapper .content #Main {
+  position: relative;
+  margin: 0;
+}
+.item {
+  padding: 10px 25px;
+}
+.item table tbody td:nth-child(2) {
+  width: 20px;
+}
+
+.cell:first-child {
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+.cell:last-child {
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+}
+
+.box {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+#Tabs {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  width: 80px;
+  position: absolute;
+  left: -260px;
+  top: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+#Tabs a {
+  text-align: center;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 4px;
+  padding: 3px 6px;
+  line-height: 1.3;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+#Tabs a.tab_current:hover {
+  border-color: #334;
+  color: white;
+  background-color: #334;
+}
+#Tabs a:hover {
+  color: black;
+  border-color: #E5E5EA;
+  background-color: #eee;
+}
+
+#SecondaryTabs {
+  position: absolute;
+  left: -150px;
+  top: 20px;
+  padding: 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+#SecondaryTabs .fr {
+  margin-bottom: 20px;
+  float: none;
+}
+#SecondaryTabs .fr a {
+  background-color: #eee;
+}
+#SecondaryTabs a {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+  padding: 3px 6px;
+  line-height: 1.3;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+#SecondaryTabs a:hover {
+  color: black;
+  border-color: #E5E5EA;
+  background-color: #eee;
+}
+
 #Top .content {
-  max-width: 1366px;
+  max-width: 850px;
 }
 #Top .content .site-nav {
   display: flex;
@@ -60,35 +199,4 @@
 #Top .content .site-nav .tools {
   display: flex;
   justify-content: flex-end;
-}
-
-#SecondaryTabs {
-  padding: 5px 10px;
-  display: flex;
-  justify-content: flex-start;
-}
-#SecondaryTabs a {
-  display: block;
-  padding: 2px 6px;
-  line-height: 1.3;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  text-decoration: none;
-  border: 1px solid transparent;
-}
-#SecondaryTabs a:hover {
-  color: black;
-  border-color: #bbbbc8;
-  background-color: #eee;
-}
-
-#Wrapper .content {
-  max-width: 1366px;
-}
-#Wrapper .content .item {
-  padding: 10px 25px;
-}
-#Wrapper .content .item table tbody td:nth-child(2) {
-  width: 20px;
 }

@@ -1,0 +1,51 @@
+// HEADER
+$height-header: 44px;
+$padding-header: 7px;
+
+#Top{
+  .content{
+    max-width: $width-max;
+    // SITE NAV
+    .site-nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: $padding-header;
+
+      > a{
+        margin-right: 10px;
+        display: block;
+        width: 94px;
+        height: 30px;
+        #Logo{
+          height: 34px;
+          background-size: 94px 30px;
+        }
+      }
+      // search bar
+      #search-container{
+        @include border-radius(50px);
+        padding-left: 35px;
+        height: $height-header - $padding-header * 2;
+        box-sizing: border-box;
+        margin: 0;
+        border: 1px solid $color-border;
+        &::before{
+          left: 5px;
+        }
+        &:hover{
+          border-color: $color-border-highlight;
+        }
+        input#search{
+          padding: 3px;
+          line-height: $height-header - $padding-header * 2 - 2;
+        }
+      }
+
+      .tools{
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.cell{
+  &:first-child{
+    @include border-radius($radius $radius 0 0 )
+  }
+  &:last-child{
+    @include border-radius(0 0 $radius $radius)
+  }
+}

@@ -37,8 +37,7 @@ $color-border-share     : #F0E8DB;
 $color-border-menu      : #646464;
 
 // Radius
-$radius-mobile: 5px;
-$radius-pc: 10px;
+$radius: 3px;
 
 // Font size
 $fz-list-header         : 20px;
@@ -47,7 +46,6 @@ $fz-list-content        : 14.5px;
 $fz-list-content-mobile : 15px;
 $fz-note                : 14px;
 $fz-small               : 12px;
-$fz-label               : 16px;
 $fz-main                : 14px;
 $fz-title               : 18px;
 $fz-big                 : 30px;
@@ -61,6 +59,8 @@ $text-title:          #232323;
 $text-date:           #2d2d2d;
 $text-about-subtitle: #D1D5DA;
 $text-menu-second:    $text-about-subtitle;
+
+$bg-active: #334;
 
 
 // Height
