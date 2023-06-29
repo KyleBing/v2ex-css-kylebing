@@ -134,6 +134,31 @@
   background-color: #eee;
 }
 
+.Night #Tabs a {
+  border: 1px solid transparent;
+}
+.Night #Tabs a.tab_current:hover {
+  border-color: #334;
+  color: white;
+  background-color: #334;
+}
+.Night #Tabs a:hover {
+  color: white;
+  border-color: #22303f;
+  background-color: #22303f;
+}
+.Night #SecondaryTabs .fr a {
+  background-color: #22303f;
+}
+.Night #SecondaryTabs a {
+  border: 1px solid transparent;
+}
+.Night #SecondaryTabs a:hover {
+  color: white;
+  border-color: #22303f;
+  background-color: #22303f;
+}
+
 .markdown_body img {
   border: 1px solid #E5E5EA;
   max-width: 100%;
@@ -182,13 +207,9 @@
   padding-left: 35px;
   box-sizing: border-box;
   margin: 0;
-  border: 1px solid #E5E5EA;
 }
 #Top .content .site-nav #search-container::before {
   left: 5px;
-}
-#Top .content .site-nav #search-container:hover {
-  border-color: #bbbbc8;
 }
 #Top .content .site-nav #search-container input#search {
   padding: 3px;
@@ -197,6 +218,16 @@
 #Top .content .site-nav .tools {
   display: flex;
   justify-content: flex-end;
+}
+#Top .content .site-nav .tools > * {
+  margin-right: 6px;
+}
+
+.Night #Top .content {
+  max-width: 1366px;
+}
+.Night #Top .content .site-nav #search-container {
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
 #Rightbar .sep20:first-child + .box {
@@ -248,4 +279,7 @@
   width: 100px !important;
   height: 100px !important;
   max-height: 100px !important;
+}
+.Night #Rightbar .sep20:first-child + .box .cell:nth-child(5) {
+  border-bottom-color: #22303f;
 }

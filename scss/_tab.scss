@@ -58,3 +58,43 @@
     }
   }
 }
+
+
+.Night{
+
+  // 主类别
+  #Tabs{
+    a{
+      border: 1px solid transparent;
+      &.tab_current{
+        &:hover{
+          border-color: $bg-active;
+          color: white;
+          background-color: $bg-active;
+        }
+      }
+      &:hover{
+        color: white;
+        border-color: $dark-border-theme;
+        background-color: darken($dark-border-theme, 0.1) ;
+      }
+    }
+  }
+
+  // 子类别
+  #SecondaryTabs{
+    .fr{
+      a{
+        background-color: $dark-border-theme;
+      }
+    }
+    a{
+      border: 1px solid transparent;
+      &:hover{
+        color: white;
+        border-color: $dark-border-theme;
+        background-color: darken($dark-border-theme, 0.1) ;
+      }
+    }
+  }
+}

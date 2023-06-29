@@ -64,3 +64,15 @@ $height-avatar: 100px;
     }
   }
 }
+
+.Night{
+  #Rightbar{
+    .sep20:first-child + .box{
+      .cell{
+        &:nth-child(5) {
+          border-bottom-color: $dark-border-theme;
+        }
+      }
+    }
+  }
+}
