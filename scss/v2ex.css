@@ -113,6 +113,8 @@
 #SecondaryTabs .fr {
   margin-right: 20px;
   float: none;
+  display: flex;
+  justify-content: flex-start;
 }
 #SecondaryTabs .fr a {
   background-color: #eee;
