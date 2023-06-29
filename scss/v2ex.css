@@ -285,3 +285,14 @@
 .Night #Rightbar .sep20:first-child + .box .cell:nth-child(5) {
   border-bottom-color: #22303f;
 }
+
+form[action="/settings"] input, form[action="/settings"] textarea {
+  width: 400px;
+}
+form[action="/settings"] .onoffswitch input[type=checkbox]:checked + label .switch {
+  left: calc(100% - 30px);
+}
+form[action="/settings"] .onoffswitch label .switch {
+  width: 24px;
+  margin: 3px;
+}
