@@ -1,5 +1,9 @@
 # v2ex 野鸡主题 css
 
+<img width="1920" alt="Screenshot 2023-06-29 at 23 51 21" src="https://github.com/KyleBing/v2ex-css-kylebing/assets/12215982/39054197-59dd-408e-bbde-40dd89de257e">
+
+
+
 ## 一、使用方法
 
 打开 v2ex 设置，将 [`v2ex.css`](https://github.com/KyleBing/v2ex-css-kylebing/blob/master/scss/v2ex.css) 内容复制到 `自定义 css` 输入框中，点击 <kbd>保存</kbd> 即可
