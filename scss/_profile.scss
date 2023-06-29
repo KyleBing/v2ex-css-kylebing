@@ -1,0 +1,66 @@
+$height-avatar: 100px;
+#Rightbar{
+  .sep20:first-child + .box{
+    display: flex;
+    flex-flow: column nowrap;
+    .cell{
+      &:nth-child(1) {
+        order: 2
+      }
+
+      &:nth-child(2) {
+        order: 3
+      }
+
+      &:nth-child(3) {
+        order: 4
+      }
+
+      &:nth-child(4) {
+        order: 5;
+        border-bottom: none;
+      }
+
+      &:nth-child(5) {
+        @include border-radius(0);
+        border-bottom: 1px solid $color-border;
+        order: 1
+      }
+      &:first-child{
+        table:first-child{
+          tr{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column nowrap;
+            td{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: auto;
+              flex-flow: column nowrap;
+              .bigger{
+                font-size: $fz-title;
+                margin-bottom: 5px;
+              }
+              &:first-child{
+                a{
+                  display: block;
+                  img{
+                    display: block;
+                    width: $height-avatar !important;
+                    height: $height-avatar !important;
+                    max-height: $height-avatar !important;
+                  }
+                }
+              }
+              &:nth-child(2){
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
