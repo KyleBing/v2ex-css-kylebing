@@ -1,3 +1,4 @@
+// 设置页面
 form[action="/settings"]{
   input,textarea {
     width: 400px;
@@ -9,5 +10,18 @@ form[action="/settings"]{
   .onoffswitch label .switch{
     width: 24px;
     margin: 3px;
+  }
+}
+
+// 发布新主题
+form{
+  textarea#topic_title{
+    padding: 8px 10px;
+  }
+  textarea#topic_content{
+    padding: 8px 10px;
+    height: 400px;
+    overflow-y: auto !important;
+    resize: vertical !important;
   }
 }

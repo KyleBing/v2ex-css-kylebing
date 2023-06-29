@@ -296,3 +296,13 @@ form[action="/settings"] .onoffswitch label .switch {
   width: 24px;
   margin: 3px;
 }
+
+form textarea#topic_title {
+  padding: 8px 10px;
+}
+form textarea#topic_content {
+  padding: 8px 10px;
+  height: 400px;
+  overflow-y: auto !important;
+  resize: vertical !important;
+}
