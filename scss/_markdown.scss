@@ -1,6 +1,6 @@
 .markdown_body{
   img{
-    border: 1px solid $color-border;
+    border: 1px solid $border;
     max-width: 100%;
     background-color: white;
     @include border-radius(3px);

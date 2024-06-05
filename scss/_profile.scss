@@ -23,7 +23,7 @@ $height-avatar: 100px;
 
       &:nth-child(5) {
         @include border-radius(0);
-        border-bottom: 1px solid $color-border;
+        border-bottom: 1px solid $border;
         order: 1
       }
       &:first-child{

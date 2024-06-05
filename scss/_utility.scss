@@ -65,7 +65,7 @@
   display: block;
   width: 100%;
   position: absolute;
-  background-color: $color-border;
+  background-color: $border;
   @include transform(scaleY(.5))
 }
 

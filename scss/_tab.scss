@@ -23,7 +23,7 @@
     }
     &:hover{
       color: black;
-      border-color: $color-border;
+      border-color: $border;
       background-color: $bg-light ;
     }
   }
@@ -41,8 +41,12 @@
     float: none;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     a{
       background-color: $bg-light;
+    }
+    .li{
+
     }
   }
   a{
@@ -55,7 +59,7 @@
     border: 1px solid transparent;
     &:hover{
       color: black;
-      border-color: $color-border;
+      border-color: $border;
       background-color: $bg-light ;
     }
   }

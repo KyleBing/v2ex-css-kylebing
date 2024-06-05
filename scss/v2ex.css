@@ -97,7 +97,7 @@
 }
 #Tabs a:hover {
   color: black;
-  border-color: #E5E5EA;
+  border-color: #dddddd;
   background-color: #eee;
 }
 
@@ -115,6 +115,7 @@
   float: none;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 #SecondaryTabs .fr a {
   background-color: #eee;
@@ -132,7 +133,7 @@
 }
 #SecondaryTabs a:hover {
   color: black;
-  border-color: #E5E5EA;
+  border-color: #dddddd;
   background-color: #eee;
 }
 
@@ -162,7 +163,7 @@
 }
 
 .markdown_body img {
-  border: 1px solid #E5E5EA;
+  border: 1px solid #dddddd;
   max-width: 100%;
   background-color: white;
   -webkit-border-radius: 3px;
@@ -218,9 +219,16 @@
   padding-left: 35px;
   box-sizing: border-box;
   margin: 0;
+  border: 1px solid #dddddd;
 }
 #Top .content .site-nav #search-container::before {
   left: 5px;
+}
+#Top .content .site-nav #search-container:active {
+  border-color: black;
+}
+#Top .content .site-nav #search-container:focus {
+  border-color: #b7b7b7;
 }
 #Top .content .site-nav #search-container input#search {
   padding: 3px;
@@ -238,7 +246,7 @@
   max-width: 1366px;
 }
 .Night #Top .content .site-nav #search-container {
-  border-color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.3) !important;
 }
 
 #Rightbar .sep20:first-child + .box {
@@ -262,7 +270,7 @@
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
-  border-bottom: 1px solid #E5E5EA;
+  border-bottom: 1px solid #dddddd;
   order: 1;
 }
 #Rightbar .sep20:first-child + .box .cell:first-child table:first-child tr {
